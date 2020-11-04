@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'user.apps.UserConfig',
+    'post.apps.PostConfig',
 ]
 
 MIDDLEWARE = [

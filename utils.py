@@ -3,7 +3,7 @@ import jwt, re
 from django.views import View
 from django.http  import JsonResponse
 
-from .models        import User
+from user.models    import User
 from local_settings import SECRET_KEY, ALGORITHM
 
 def account_validate(value):

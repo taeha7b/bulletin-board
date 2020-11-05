@@ -5,10 +5,9 @@ from django.http  import JsonResponse
 
 from .models        import User
 from local_settings import SECRET_KEY, ALGORITHM
-from .utils         import (
+from utils          import (
     account_validate,
-    password_validate,
-    login_confirm
+    password_validate
 )
 
 class SignUp(View):

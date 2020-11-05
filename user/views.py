@@ -7,7 +7,8 @@ from .models        import User
 from local_settings import SECRET_KEY, ALGORITHM
 from utils          import (
     account_validate,
-    password_validate
+    password_validate,
+    login_confirm
 )
 
 class SignUp(View):

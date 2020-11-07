@@ -1,6 +1,7 @@
 from django.db import models
 
-class Post(models.Model):
+class Posting(models.Model):
+    objects    = models.Manager()
     user       = models.ForeignKey('user.User', on_delete = models.CASCADE)
     created_at = models.DateTimeField(auto_now_add = True)
     content    = models.CharField(max_length = 1024)
@@ -8,4 +9,4 @@ class Post(models.Model):
     is_deleted = models.BooleanField(default = False)
 
     class Meta:
-        db_table = 'posts'
+        db_table = 'postings'
